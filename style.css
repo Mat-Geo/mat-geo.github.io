@@ -26,7 +26,20 @@ section {
     padding: 0;
 }
 
+@media (max-width: 768px) {
+    section {
+        background-size: cover; /* Ensure background fills the screen */
+    }
+}
 
+@media (max-width: 480px) {
+    section {
+        background-size: contain; /* Adjust image scaling for smaller screens */
+        background-attachment: scroll; /* Disable fixed scrolling effect on mobile */
+    }
+}
+
+/* Heading and Content */
 h1, h2, h3 {
     font-weight: bold;
 }
@@ -101,6 +114,7 @@ button, .btn {
 
 button:hover, .btn:hover {
     background-color: #f39c12; /* Lighter orange */
+    box-shadow: 0 4px 10px rgba(255, 127, 0, 0.6); /* Subtle shadow on hover */
 }
 
 /* Footer */
@@ -140,14 +154,51 @@ footer a:hover {
     section p {
         font-size: 1rem;
     }
+
+    nav ul li {
+        display: inline-block;
+        margin: 10px 0;
+    }
 }
 
 @media (max-width: 480px) {
     nav ul {
         display: block;
+        padding: 0;
     }
 
     nav ul li {
         margin: 10px 0;
+        text-align: center;
+    }
+
+    nav ul li a {
+        font-size: 16px;
+    }
+
+    section h1 {
+        font-size: 2rem;
+    }
+
+    section h2 {
+        font-size: 1.5rem;
+    }
+
+    section p {
+        font-size: 1rem;
+    }
+
+    footer {
+        padding: 15px;
+        font-size: 12px;
     }
 }
+
+/* Main Section Alignment */
+section {
+    display: flex;
+    flex-direction: column; /* Align content vertically */
+    justify-content: center;
+    align-items: center;
+}
+

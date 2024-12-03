@@ -15,7 +15,7 @@ body {
 
 /* Background Image */
 section {
-    background: url('images/DALL·E 2024-12-03 19.07.33 - A sleek, professional digital design for a portfolio background with a dark aesthetic. The image features black, grey, and subtle orange gradient tone.webp') center/cover no-repeat;
+    background: url('images/cyber-background.webp') center/cover no-repeat;
     background-attachment: fixed;
     min-height: 100vh; /* Full viewport height */
     display: flex;
